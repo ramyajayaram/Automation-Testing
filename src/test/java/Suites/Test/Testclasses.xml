@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="3" >
+<parameter name="browserType" value="chrome" />
+<parameter name="appURL" value="https://www.phptravels.net/login" />
+<test name="testGuru">
+<parameter name="searchKey" value="UK" />
+<classes>
+<class name="SanitySuite.SanitySuite">
+</class>
+</classes>
+</test>
+</suite>
