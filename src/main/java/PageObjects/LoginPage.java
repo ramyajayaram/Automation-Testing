@@ -20,7 +20,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import ApplicationTest.Test.PropertyCollection;
-import PageObjects.LoginPage.ExcelTest;
+
 
 	class ExcelTest {
 		public FileInputStream fis = null;
