@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testGuru"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="24.007">
+  <properties />
+  
+  
+            <testcase name="initializeTestBaseSetup" time="24.007" classname="Suites.Test.SanitySuite$TestBaseSetup" />
+      
+</testsuite>

@@ -61,6 +61,8 @@ public class SanitySuite {
 			try {
 				setDriver(browserType, appURL);
 				LoginPage objLoginPage=new LoginPage();
+				objLoginPage.Login();
+				
 				
 
 			} catch (Exception e) {

@@ -10,7 +10,7 @@
 <test name="testGuru">
 <parameter name="searchKey" value="UK" />
 <classes>
-<class name="SanitySuite.SanitySuite">
+<class name="Suites.Test.SanitySuite">
 </class>
 </classes>
 </test>
