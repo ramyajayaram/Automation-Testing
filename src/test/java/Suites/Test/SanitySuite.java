@@ -18,7 +18,7 @@ public class SanitySuite {
 	public static class TestBaseSetup {
 
 		
-		static final String driverPath = "C:\\Users\\Ramya\\eclipse-workspace\\ApplicationTest\\Drivers\\";
+		static final String DRIVER_PATH = "C:\\Users\\Ramya\\eclipse-workspace\\ApplicationTest\\Drivers\\";
 
 		
 
@@ -39,7 +39,7 @@ public class SanitySuite {
 
 		private static WebDriver initChromeDriver(String appURL) {
 			System.out.println("Launching google chrome with new profile..");
-			System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", DRIVER_PATH + "chromedriver.exe");
 			PropertyCollection.driver= new ChromeDriver();
 			PropertyCollection.driver.manage().window().maximize();
 			PropertyCollection.driver.get(appURL);

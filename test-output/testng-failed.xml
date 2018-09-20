@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <parameter name="appURL" value="https://www.phptravels.net/login"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="3" name="ApplicationTest(failed)">
+    <parameter name="searchKey" value="UK"/>
+    <classes>
+      <class name="Suites.Test.SmokeTestSuite$TestBaseSetup">
+        <methods>
+          <include name="bookHotel"/>
+        </methods>
+      </class> <!-- Suites.Test.SmokeTestSuite$TestBaseSetup -->
+    </classes>
+  </test> <!-- ApplicationTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

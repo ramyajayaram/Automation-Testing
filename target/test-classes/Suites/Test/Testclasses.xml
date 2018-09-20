@@ -7,11 +7,11 @@
   </listeners>
 <parameter name="browserType" value="chrome" />
 <parameter name="appURL" value="https://www.phptravels.net/login" />
-<test name="testGuru">
+<test name="ApplicationTest">
 <parameter name="searchKey" value="UK" />
 <classes>
-<class name="Suites.Test.SanitySuite">
-</class>
+<class name="Suites.Test.SmokeTestSuite"/>
+
 </classes>
 </test>
 </suite>
