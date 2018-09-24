@@ -5,7 +5,6 @@
     <classes>
       <class name="Suites.Test.SmokeTestSuite$TestBaseSetup">
         <methods>
-          <include name="initializeTestBaseSetup"/>
           <include name="bookHotel"/>
         </methods>
       </class> <!-- Suites.Test.SmokeTestSuite$TestBaseSetup -->

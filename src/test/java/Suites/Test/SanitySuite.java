@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import ApplicationTest.Test.PropertyCollection;
+import PageObjects.HomePage;
 import PageObjects.LoginPage;
 
 
@@ -60,8 +61,7 @@ public class SanitySuite {
 		public void initializeTestBaseSetup(String browserType, String appURL)  {
 			try {
 				setDriver(browserType, appURL);
-				LoginPage objLoginPage=new LoginPage();
-				objLoginPage.Login();
+				
 				
 				
 
@@ -70,9 +70,16 @@ public class SanitySuite {
 			}
 		}
 
+		@Test
 		
+		public void homepageSearch() throws InterruptedException {
+			HomePage objHomePage=new HomePage();
+			objHomePage.HotelsSearch();
+			
+		}
 		
 		
 	}
 
+	
 }

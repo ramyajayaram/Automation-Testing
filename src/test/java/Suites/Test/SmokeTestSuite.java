@@ -50,9 +50,10 @@ public static class TestBaseSetup {
 			return PropertyCollection.driver;
 		}
 
-		@Test
+	
+
+		@Test(priority=1)
 		@Parameters({ "browserType", "appURL" })
-		
 		public void initializeTestBaseSetup(String browserType, String appURL)  {
 			try {
 				setDriver(browserType, appURL);
@@ -68,17 +69,19 @@ public static class TestBaseSetup {
 		
 		
 		
-		@Test
-		public void bookHotel()
+		@Test(priority=2)
+				public void BookHotel() throws InterruptedException
 		{
 			
-			BookHotelPage objBookHotelPage=new BookHotelPage();
-			objBookHotelPage.bookHotel();
+			BookHotelPage BookHotelPage=new BookHotelPage();
+			BookHotelPage.bookHotel();
 
+		}
 		
 		
-		
-	}
+
+	
+	
 
 }
 

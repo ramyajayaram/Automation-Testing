@@ -3,9 +3,14 @@ package PageObjects;
 import static org.testng.AssertJUnit.assertEquals;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import ApplicationTest.Test.PropertyCollection;
@@ -22,7 +27,7 @@ public  void BookHotelPage()
 }
 
 
-@FindBy(xpath = "//a[@title='Hotels']")
+@FindBy(xpath = "//a[@href='https://www.phptravels.net/hotels']")
 private static WebElement hotelMenu;
 
 @FindBy(xpath = "//b[contains(text(),'Rendezvous Hotels')]")
@@ -37,9 +42,19 @@ private static WebElement RendezvousHotelsTitle;
 
 
 
-public void bookHotel()
+
+
+
+
+public void bookHotel() throws InterruptedException
 {
-	hotelMenu.click();
+	PropertyCollection.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	 Actions action = new Actions(PropertyCollection.driver);
+	 WebElement element =PropertyCollection. driver.findElement(By.xpath("//a[@title='Hotels']"));
+
+    action.moveToElement(element).build().perform();
+    element.click();
+  
 	PropertyCollection.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	RendezvousHotelshotelName.click();
 	PropertyCollection.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

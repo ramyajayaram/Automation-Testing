@@ -6,7 +6,7 @@
       <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
 <parameter name="browserType" value="chrome" />
-<parameter name="appURL" value="https://www.phptravels.net/login" />
+<parameter name="appURL" value="https://www.phptravels.net" />
 <test name="ApplicationTest">
 <parameter name="searchKey" value="UK" />
 <classes>

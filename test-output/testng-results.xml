@@ -2,17 +2,33 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="43084" started-at="2018-09-14T08:26:43Z" finished-at="2018-09-14T08:27:26Z">
+  <suite name="TestSuite" duration-ms="160423" started-at="2018-09-24T12:07:29Z" finished-at="2018-09-24T12:10:09Z">
     <groups>
     </groups>
-    <test name="ApplicationTest" duration-ms="43084" started-at="2018-09-14T08:26:43Z" finished-at="2018-09-14T08:27:26Z">
+    <test name="ApplicationTest" duration-ms="160423" started-at="2018-09-24T12:07:29Z" finished-at="2018-09-24T12:10:09Z">
       <class name="Suites.Test.SmokeTestSuite$TestBaseSetup">
-        <test-method status="FAIL" signature="bookHotel()[pri:0, instance:Suites.Test.SmokeTestSuite$TestBaseSetup@4bbfb90a]" name="bookHotel" duration-ms="18" started-at="2018-09-14T08:26:43Z" finished-at="2018-09-14T08:26:43Z">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:1, instance:Suites.Test.SmokeTestSuite$TestBaseSetup@4bbfb90a]" name="initializeTestBaseSetup" duration-ms="119095" started-at="2018-09-24T12:07:29Z" finished-at="2018-09-24T12:09:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.phptravels.net]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="FAIL" signature="BookHotel()[pri:2, instance:Suites.Test.SmokeTestSuite$TestBaseSetup@4bbfb90a]" name="BookHotel" duration-ms="41054" started-at="2018-09-24T12:09:28Z" finished-at="2018-09-24T12:10:09Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at PageObjects.BookHotelPage.bookHotel(BookHotelPage.java:42)
-at Suites.Test.SmokeTestSuite$TestBaseSetup.bookHotel(SmokeTestSuite.java:76)
+at PageObjects.BookHotelPage.bookHotel(BookHotelPage.java:59)
+at Suites.Test.SmokeTestSuite$TestBaseSetup.BookHotel(SmokeTestSuite.java:77)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -43,23 +59,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookHotel -->
-        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:Suites.Test.SmokeTestSuite$TestBaseSetup@4bbfb90a]" name="initializeTestBaseSetup" duration-ms="43039" started-at="2018-09-14T08:26:43Z" finished-at="2018-09-14T08:27:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://www.phptravels.net/login]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeTestBaseSetup -->
+        </test-method> <!-- BookHotel -->
       </class> <!-- Suites.Test.SmokeTestSuite$TestBaseSetup -->
     </test> <!-- ApplicationTest -->
   </suite> <!-- TestSuite -->

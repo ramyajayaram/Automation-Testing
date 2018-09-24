@@ -4,15 +4,15 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="43.057">
+           time="160.149">
   <properties />
-            <testcase name="bookHotel" time="0.018" classname="Suites.Test.SmokeTestSuite$TestBaseSetup">
+            <testcase name="BookHotel" time="41.054" classname="Suites.Test.SmokeTestSuite$TestBaseSetup">
                 <failure type="java.lang.NullPointerException"
                   message="(null)"
               >
 <![CDATA[java.lang.NullPointerException
-  PageObjects.BookHotelPage.bookHotel(BookHotelPage.java:42)
-  Suites.Test.SmokeTestSuite$TestBaseSetup.bookHotel(SmokeTestSuite.java:76)
+  PageObjects.BookHotelPage.bookHotel(BookHotelPage.java:59)
+  Suites.Test.SmokeTestSuite$TestBaseSetup.BookHotel(SmokeTestSuite.java:77)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -44,6 +44,6 @@
           </testcase>
   
   
-            <testcase name="initializeTestBaseSetup" time="43.039" classname="Suites.Test.SmokeTestSuite$TestBaseSetup" />
+            <testcase name="initializeTestBaseSetup" time="119.095" classname="Suites.Test.SmokeTestSuite$TestBaseSetup" />
       
 </testsuite>
