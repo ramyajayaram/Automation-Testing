@@ -4,14 +4,16 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="62.623">
+           time="203.413">
   <properties />
-            <testcase name="homepageSearch" time="5.054" classname="Suites.Test.SanitySuite$TestBaseSetup">
+            <testcase name="homepageSearch" time="51.527" classname="Suites.Test.SanitySuite$TestBaseSetup">
                 <failure type="java.lang.NullPointerException"
                   message="(null)"
               >
 <![CDATA[java.lang.NullPointerException
-  PageObjects.HomePage.HotelsSearch(HomePage.java:36)
+  java.util.Objects.requireNonNull(Unknown Source)
+  org.openqa.selenium.interactions.Actions.<init>(Actions.java:66)
+  PageObjects.HomePage.HotelsSearch(HomePage.java:43)
   Suites.Test.SanitySuite$TestBaseSetup.homepageSearch(SanitySuite.java:77)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -44,6 +46,6 @@
           </testcase>
   
   
-            <testcase name="initializeTestBaseSetup" time="57.569" classname="Suites.Test.SanitySuite$TestBaseSetup" />
+            <testcase name="initializeTestBaseSetup" time="151.886" classname="Suites.Test.SanitySuite$TestBaseSetup" />
       
 </testsuite>

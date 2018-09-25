@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-TestSuite">
-                    <span>C:\Users\Ramya\Documents\AutomationFramework\src\test\java\Suites\Test\Testclasses.xml</span>
+                    <span>C:\Users\Ramya\Documents\AutomationFramework\src\test\java\Suites\Test\Appconfig.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-TestSuite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="Suites.Test.SmokeTestSuite$TestBaseSetup" hash-for-method="BookHotel">BookHotel</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="Suites.Test.SanitySuite$TestBaseSetup" hash-for-method="homepageSearch">homepageSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-TestSuite -->
@@ -116,7 +116,7 @@
                     <div class="method-list-content passed suite-TestSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="Suites.Test.SmokeTestSuite$TestBaseSetup" hash-for-method="initializeTestBaseSetup(chrome, https://www.phptravels.net)">initializeTestBaseSetup(chrome, https://www.phptravels.net)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="Suites.Test.SanitySuite$TestBaseSetup" hash-for-method="initializeTestBaseSetup(chrome, https://www.phptravels.net)">initializeTestBaseSetup(chrome, https://www.phptravels.net)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestSuite -->
@@ -134,17 +134,19 @@
           <div class="suite-TestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Suites.Test.SmokeTestSuite$TestBaseSetup</span>
+              <span class="class-name">Suites.Test.SanitySuite$TestBaseSetup</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="BookHotel">
-                  </a> <!-- BookHotel -->
-                  <span class="method-name">BookHotel</span>
+                  <a name="homepageSearch">
+                  </a> <!-- homepageSearch -->
+                  <span class="method-name">homepageSearch</span>
                   <div class="stack-trace">java.lang.NullPointerException
-	at PageObjects.BookHotelPage.bookHotel(BookHotelPage.java:59)
-	at Suites.Test.SmokeTestSuite$TestBaseSetup.BookHotel(SmokeTestSuite.java:77)
+	at java.util.Objects.requireNonNull(Unknown Source)
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:66)
+	at PageObjects.HomePage.HotelsSearch(HomePage.java:43)
+	at Suites.Test.SanitySuite$TestBaseSetup.homepageSearch(SanitySuite.java:77)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -154,7 +156,7 @@
           <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Suites.Test.SmokeTestSuite$TestBaseSetup</span>
+              <span class="class-name">Suites.Test.SanitySuite$TestBaseSetup</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -170,7 +172,7 @@
         </div> <!-- panel TestSuite -->
         <div panel-name="test-xml-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Ramya\Documents\AutomationFramework\src\test\java\Suites\Test\Testclasses.xml</span>
+            <span class="header-content">C:\Users\Ramya\Documents\AutomationFramework\src\test\java\Suites\Test\Appconfig.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -186,7 +188,7 @@
   &lt;test thread-count=&quot;3&quot; name=&quot;ApplicationTest&quot;&gt;
     &lt;parameter name=&quot;searchKey&quot; value=&quot;UK&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Suites.Test.SmokeTestSuite&quot;/&gt;
+      &lt;class name=&quot;Suites.Test.SanitySuite&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ApplicationTest --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite --&gt;
@@ -229,17 +231,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'initializeTestBaseSetup')
-data.setCell(0, 2, 'Suites.Test.SmokeTestSuite$TestBaseSetup')
-data.setCell(0, 3, 119095);
+data.setCell(0, 2, 'Suites.Test.SanitySuite$TestBaseSetup')
+data.setCell(0, 3, 151886);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'BookHotel')
-data.setCell(1, 2, 'Suites.Test.SmokeTestSuite$TestBaseSetup')
-data.setCell(1, 3, 41054);
+data.setCell(1, 1, 'homepageSearch')
+data.setCell(1, 2, 'Suites.Test.SanitySuite$TestBaseSetup')
+data.setCell(1, 3, 51527);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -265,16 +267,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Suites.Test.SmokeTestSuite$TestBaseSetup</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">initializeTestBaseSetup(chrome, https://www.phptravels.net)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              <div class="chronological-class-name">Suites.Test.SanitySuite$TestBaseSetup</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">BookHotel</span>
-                <span class="method-start">119103 ms</span>
+                <span class="method-name">homepageSearch</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">initializeTestBaseSetup(chrome, https://www.phptravels.net)</span>
+                <span class="method-start">51644 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

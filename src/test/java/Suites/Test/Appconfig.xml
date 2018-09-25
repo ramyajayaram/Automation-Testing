@@ -10,7 +10,7 @@
 <test name="ApplicationTest">
 <parameter name="searchKey" value="UK" />
 <classes>
-<class name="Suites.Test.SmokeTestSuite"/>
+<class name="Suites.Test.SanitySuite"/>
 
 </classes>
 </test>

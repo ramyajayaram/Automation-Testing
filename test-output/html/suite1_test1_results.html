@@ -12,7 +12,7 @@
 <body>
 <h1>ApplicationTest</h1>
 <p>
-  Test duration: 160.149s
+  Test duration: 203.413s
 </p>
 
 
@@ -20,15 +20,15 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">Suites.Test.SmokeTestSuite$TestBaseSetup</td>
+        <td colspan="3" class="group">Suites.Test.SanitySuite$TestBaseSetup</td>
       </tr>
             
 <tr>
   <td class="method">
-                  BookHotel
+                  homepageSearch
       </td>
   <td class="duration">
-    41.054s
+    51.527s
   </td>
   <td class="result">
         
@@ -37,8 +37,10 @@
 
         <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
     <div class="stackTrace" id="exception-0">
-              PageObjects.BookHotelPage.bookHotel(BookHotelPage.java:59)<br />
-              Suites.Test.SmokeTestSuite$TestBaseSetup.BookHotel(SmokeTestSuite.java:77)<br />
+              java.util.Objects.requireNonNull(Unknown Source)<br />
+              org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:66)<br />
+              PageObjects.HomePage.HotelsSearch(HomePage.java:43)<br />
+              Suites.Test.SanitySuite$TestBaseSetup.homepageSearch(SanitySuite.java:77)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
@@ -73,7 +75,7 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">Suites.Test.SmokeTestSuite$TestBaseSetup</td>
+        <td colspan="3" class="group">Suites.Test.SanitySuite$TestBaseSetup</td>
       </tr>
             
 <tr>
@@ -81,7 +83,7 @@
                   initializeTestBaseSetup
       </td>
   <td class="duration">
-    119.095s
+    151.886s
   </td>
   <td class="result">
         
